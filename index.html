@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zone Race</title>
+	<link rel="stylesheet" href="style.css">
+	<script type=text/javascript src="script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
+
+</head>
+<body>
+
+<div class="header">
+	
+	<div class="name"><h3>ZONE RACE</h3></div>
+	
+</div>
+
+	<div class="menu">
+		<div class="blokmenu">
+			<div class="blok"><a href="">Главная</a></div>
+			<div class="blok"><a href="">Новости</a></div>
+			<div class="blok"><a href="">Гонки</a></div>
+			<div class="blok"><a href="">Фото</a></div>
+			<div class="blok"><a href="">Контакты</a></div>
+		</div>
+	</div>
+
+<div class="logobox">
+		<div class="logo">
+			<img src="images/logo.png" width="100" height="100" alt="logo">
+		</div>
+			<div class="slogan"><h1><br>Проверь себя на прочность</h1>
+			</div>
+</div>
+
+
+<div class="text">
+	<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sed totam fugit! Cupiditate necessitatibus nesciunt officiis modi praesentium ipsam beatae asperiores velit harum quod earum repellendus sunt autem cumque nihil temporibus, fuga doloremque, dolore, vel eaque amet. Deleniti ipsum, hic alias iure repellendus beatae,
+	<img src="images/run.jpg" width="500" alt="photo" class="rightimg"> mollitia tenetur quibusdam optio, magni ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.  Doloremque accusantium commodi dignissimos deserunt quidem ex atque odit asperiores saepe facilis nisi aperiam, vitae labore laudantium voluptates quia sint dolores fuga ipsam accusamus autem esse quibusdam iusto? 
+	
+	Officia perspiciatis rerum autem sunt vero similique animi quibusdam praesentium maxime nulla temporibus unde voluptate beatae fugiat magnam quasi nisi debitis in quo ipsum, id voluptates nam! Minima assumenda quod eaque eos harum nemo nulla in ullam natus culpa nobis facilis, fuga laborum aspernatur, qui expedita voluptatibus odio tempora, soluta modi quasi? Rerum dignissimos quisquam voluptatibus. Voluptates velit laudantium totam aliquam corporis facere quiaumquam, velit illum animi iure iste voluptas! Rem, fugiat, consequatur doloribus exercitationem accusantium officiis asperiores omnis quae at molestiae eaque ut deleniti excepturi esse ad voluptatum culpa unde praesentium. Officiis quibusdam accusamus dolorum ea deserunt. Fugiat esse impedit aliquam deserunt voluptate, aperiam tenetur harum mollitia, autem quibusdam hic pariatur nostrum numquam.</p>
+	<br>
+	<p><img src="images/run2.jpg" width="500" alt="photo" class="leftimg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt similique magnam commodi nisi eius voluptates. Hic tenetur deleniti ut cupiditate iste nemo aperiam minus error, soluta! Vero eveniet veniam harum dolore aliquid, perspiciatis laboriosam deleniti dolorum officia voluptatum earum magni repudiandae quos, cumque unde eius qui architecto laudantium voluptates neque quo soluta milique veritatis delectus consectetur veniam obcaecati! Accusantium ducimus, reiciendis. Doloremque corporis asperiores sint, animi rem ad fugiat ea, rep animi nulla nihil nemo ipsum eaque. Quisquam repudiandae officiis, error tempore nesciunt, voluptas soluta quis reprehenderit rem. Officia et, dignissimos corporis harum commodi, magnam ducimus odio dolores dolore distinctio nesciunt delectus quas quisquam at sit minima obcaecati dolorem animi sint, ex voluptate! Quibusdam fuga quaerat nesciunt magnam perspiciatis, voluptates officiis dolores quae possimus animi. Quidem corrupti optio accusantium nesciunt, doloremque aspernatur, sunt cupiditate consequuntur iste vero omnis animi harum reprehenderit autem, aliquid ratione beatae. Laborum iusto voluptas quae aliquid veritatis nostrum placeat, at aliquam dicta.</p>
+	</div>
+
+<div class="footer">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis unde, quo ipsum earum placeat deserunt, nesciunt, ipsam at eaque soluta voluptate molestiae libero mollitia. Aspernatur ipsam sapiente nisi saepe velit illum cupiditate corporis odio, earum dolores doloribus quaerat porro, reiciendis cum placeat ratione sequi, expedita autem numquam, aliquam distinctio? Nobis.
+<div class="contacts">
+	<div class="container">
+		<h2>Форма обратной связи</h2>
+		<form id="contactForm" action="handler.php" method="post">
+			<div class="field-block">
+				<label for="name">Ваше имя:</label>
+				<input id="name" class="field" name="name" required type="text" placeholder="Иванов Иван Иванович">
+			</div>
+			<div class="field-block">
+				<label for="email">Ваш E-mail:</label>
+				<input id="email" class="field" name="email" required type="email" placeholder="ivanov@gmail.com">
+			</div>
+			<div class="field-block">
+				<label for="phone">Ваш телефон:</label>
+				<input id="phone" class="field" name="phone" required type="text" placeholder="+375 (XX) XXX-XX-XX">
+			</div>
+			<div class="field-block">
+				<label for="message">Текст сообщения:</label>
+				<textarea id="message" class="field" required name="message" rows="4"></textarea>
+			</div>
+			<div class="field-block">
+				<input id="check" name="check" checked type="checkbox">
+				<span class="check-text">Я добровольно отправляю свои данные</span>
+			</div>
+			<button id="button" class="button" type="submit">Отправить</button>
+			<div class="result">
+				<span id="answer"></span>
+				<span id="loader"><img src="images/loader.gif" alt=""></span>
+			</div>
+		</form>
+	</div>		
+</div>
+
+
+	
+</div>
+<a href="#" class="scrollup">Наверх</a>
+
+
+</body>
+</html>
